@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:scrollbarAlwaysDrawHorizontalTrack="true" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:layout_weight="1.0">
+            <TextView android:textSize="25dp" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_title" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_data_mail" />
+                <EditText android:id="@id/feedback_data_mail" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_data_android_device" />
+                <EditText android:id="@id/feedback_data_android_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_data_cam_model" />
+                <EditText android:id="@id/feedback_data_cam_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+            </LinearLayout>
+            <TableRow android:background="#453f40">
+                <TextView android:textSize="25dp" android:id="@id/textView1" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_properties" />
+                <TextView android:textSize="25dp" android:id="@id/textView2" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_option_work" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="25dp" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shutter_speed" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerShutterSpeedFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="25dp" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aperture" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerApertureFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iso" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerIsoFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_func_metering_mode" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerMeteringModeFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picture_style" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerPictureStyleFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_func_white_balance" />
+                <Spinner android:entries="@array/propertyFeedbackArray" android:id="@id/spinnerWhiteBalanceFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow5" android:background="#453f40" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_functions" />
+                <TextView android:textSize="25dp" android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_option_work" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_func_liveview" />
+                <CheckBox android:id="@id/checkBoxLiveView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_func_autofocus" />
+                <CheckBox android:id="@id/checkBoxAutofocus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_func_manual_focus" />
+                <CheckBox android:id="@id/checkBoxManualFocus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow9" android:background="#453f40" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="25dp" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_summary" />
+            </TableRow>
+            <TableRow android:id="@id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <EditText android:id="@id/editTextSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone">
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+        </TableLayout>
+        <Button android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/buttonSendReport" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/feedback_button_send" android:layout_weight="0.0" />
+    </LinearLayout>
+</ScrollView>

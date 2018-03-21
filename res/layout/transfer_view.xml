@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x8201" android:layout_height="match_parent">
+    <ImageView android:id="@id/transferImageView" android:layout_width="UNKNOWN_DATA_0x8001" android:layout_height="match_parent" android:layout_margin="1dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/transferObjectNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/transferprogressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_centerInParent="true" style="@*style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

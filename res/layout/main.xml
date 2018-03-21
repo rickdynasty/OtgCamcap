@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hello !!!" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/usbButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open USB Device" />
+        <Button android:id="@id/closeUsbButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close USB Device" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/sendDataButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OpenSession" />
+        <Button android:id="@id/getDviceInfoButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GetDeviceInfo" />
+        <Button android:id="@id/setFNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Values" />
+        <Spinner android:id="@id/fNumberSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/takeCaptureButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shot" />
+        <ToggleButton android:id="@id/toggleButtonHostMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Host Mode" android:textOff="Pc Mode" />
+        <ToggleButton android:id="@id/toggleButtonLiveView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Live View Off" android:textOff="Live View On" />
+        <Button android:id="@id/buttonBkt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BKT" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shutter speed:" />
+            <SeekBar android:id="@id/seekBarShutter" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="0" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/textViewCurrentShutterSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aperture: " />
+            <SeekBar android:id="@id/seekBarAperture" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="0" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/textViewCurrentAperture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Iso: " />
+            <SeekBar android:id="@id/seekBarIso" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="0" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/textViewCurrentIso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EV: " />
+            <SeekBar android:id="@id/seekBarEv" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="0" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/textViewCurrentEv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/imageView" android:layout_width="UNKNOWN_DATA_0xa001" android:layout_height="UNKNOWN_DATA_0x7801" />
+        <ImageView android:id="@id/imageLiveView" android:layout_width="UNKNOWN_DATA_0x25801" android:layout_height="UNKNOWN_DATA_0x1aa01" />
+        <ListView android:id="@id/listView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

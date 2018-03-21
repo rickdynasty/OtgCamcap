@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_transfer_file_type">
+        <ListPreference
+            android:defaultValue="CameraAndTablet"
+            android:entries="@array/imageTargetArray"
+            android:entryValues="@array/imageTargetValues"
+            android:key="prefTransferJpeg"
+            android:title="@string/settings_transfer_jpeg" />
+        <ListPreference
+            android:defaultValue="Camera"
+            android:entries="@array/imageTargetArray"
+            android:entryValues="@array/imageTargetValues"
+            android:key="prefTransferRaw"
+            android:title="@string/setting_transfer_raw" />
+    </PreferenceCategory>
+</PreferenceScreen>

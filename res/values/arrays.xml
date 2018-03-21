@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="imageTargetArray">
+        <item>Tablet</item>
+        <item>Camera</item>
+        <item>Tablet + Camera</item>
+    </array>
+    <array name="imageTargetValues">
+        <item>Tablet</item>
+        <item>Camera</item>
+        <item>CameraAndTablet</item>
+    </array>
+    <array name="propertyFeedbackArray">
+        <item>Write and read</item>
+        <item>Only read</item>
+        <item>Nothing</item>
+    </array>
+    <array name="bracketing_number_of_fotos_array">
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+    </array>
+    <array name="bracketing_step_size_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+</resources>

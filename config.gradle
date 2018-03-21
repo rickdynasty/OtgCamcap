@@ -1,0 +1,22 @@
+import java.text.SimpleDateFormat
+
+ext {
+    SimpleDateFormat format = new SimpleDateFormat("yyMMdd");
+    Date date = new Date();
+    String dateTime = format.format(date);
+
+    String buildNo = "$System.env.BuildNo";
+    if (buildNo == ("null")) {
+        versionCode = 999999;
+    } else {
+        versionCode = Integer.valueOf(buildNo);
+    }
+
+    versionName = dateTime + "." + versionCode;
+
+    watchBuildtools = "25.0.0"
+    pluginBuildtools = "25.0.2"
+    minSdkVersion = 19
+    targetSdkVersion = 22
+    compileSdkVersion = 25
+}

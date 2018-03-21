@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/de.xeqo.camcapdemo">
+    <item android:drawable="@color/bisque" android:state_available="true" android:state_writeable="true" />
+    <item android:drawable="@color/moccasin" android:state_writeable="true" />
+    <item android:drawable="@color/floralwhite" />
+</selector>

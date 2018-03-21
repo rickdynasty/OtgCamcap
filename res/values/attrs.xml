@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="state_writeable">
+        <item>8</item>
+    </attr>
+    <attr name="state_available">
+        <item>8</item>
+    </attr>
+    <attr name="header">
+        <item>2</item>
+    </attr>
+</resources>

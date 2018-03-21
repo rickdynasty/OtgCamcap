@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CaptureStyle">
+    </style>
+    <style name="CameraPreferenceButton">
+        <item>#000</item>
+        <item>70dp</item>
+    </style>
+    <style name="CameraPreferenceTextValue">
+        <item>#000</item>
+    </style>
+    <style name="CameraPreferenceButtonLayoutStyle">
+        <item>1</item>
+        <item>true</item>
+    </style>
+    <style name="camera_property_box">
+        <item>@drawable/spinner_normal</item>
+        <item>5dp</item>
+        <item>3dp</item>
+        <item>5dp</item>
+        <item>5dp</item>
+        <item>true</item>
+        <item>true</item>
+        <item>120dp</item>
+        <item>80dp</item>
+    </style>
+</resources>

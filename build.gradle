@@ -1,0 +1,65 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        def REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public/';
+        try {
+            // ORG_GRADLE_PROJECT_repo_url_tencent定义在build.sh中
+            REPOSITORY_URL = repo_url_tencent
+        } catch (Exception e) {
+            // 如果没有定义，就使用阿里云的repo
+        }
+
+        println "Repositories : " + REPOSITORY_URL
+
+        maven {
+            url REPOSITORY_URL
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.pluginBuildtools
+    defaultConfig {
+        applicationId "de.xeqo.camcapdemo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    sourceSets.main {
+        java.srcDirs = ['.']
+        manifest.srcFile 'AndroidManifest.xml'
+        res.srcDirs = ['res']
+        jniLibs.srcDirs = ['libs']
+        assets.srcDirs = ['assets']
+        aidl.srcDirs = ['src']
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'linklib')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+}

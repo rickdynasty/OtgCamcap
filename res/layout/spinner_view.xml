@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="25sp" android:textColor="0x106000c" android:ellipsize="end" android:id="@id/spinnerCustomViewText" android:padding="0dp" android:singleLine="true" />

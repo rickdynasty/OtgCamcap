@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/de.xeqo.camcapdemo"
+    camcap:background="@drawable/main_background"
+    camcap:id="@id/lnparent"
+    camcap:layout_height="match_parent"
+    camcap:layout_width="match_parent"
+    camcap:orientation="vertical"
+    camcap:padding="3dp"<LinearLayout
+camcap:orientation="horizontal"
+camcap:id="@id/mainLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="match_parent"
+camcap:layout_weight="1.0"<LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/leftLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="match_parent"
+camcap:layout_weight="1.0">
+<RelativeLayout
+    camcap:layout_width="match_parent"
+    camcap:layout_height="match_parent">
+
+    <LinearLayout
+        camcap:orientation="vertical"
+        camcap:layout_width="match_parent"
+        camcap:layout_height="match_parent"
+        camcap:layout_weight="1.0">
+
+    <RelativeLayout
+        camcap:background="@color/cornsilk"
+        camcap:layout_width="match_parent"
+        camcap:layout_height="match_parent"
+        camcap:layout_weight="1.0">
+
+        <ImageView
+            camcap:id="@id/imageViewMain"
+            camcap:layout_width="match_parent"
+            camcap:layout_height="match_parent" />
+
+        <TextView
+            camcap:textSize="30sp"
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content"
+            camcap:layout_marginTop="70dp"
+            camcap:text="@string/textView_lowQuality" />
+
+        <Button
+            camcap:id="@id/buttonAutoFocus"
+            camcap:visibility="invisible"
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content"
+            camcap:text="@string/autofocus"
+            camcap:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            camcap:orientation="horizontal"
+            camcap:id="@id/focusButtonsLayout"
+            camcap:visibility="invisible"
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content"
+            camcap:layout_alignBottom="@id/imageViewMain"
+            camcap:layout_centerHorizontal="true">
+
+            <Button
+                camcap:id="@id/buttonMfDriveBackwardLong"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content"
+                camcap:text="<<" />
+
+            <Button
+                camcap:id="@id/buttonMfDriveBackwardShort"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content"
+                camcap:text="<" />
+
+            <Button
+                camcap:id="@id/buttonMfDriveForwardShort"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content"
+                camcap:text=">" />
+
+            <Button
+                camcap:id="@id/buttonMfDriveForwardLong"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content"
+                camcap:text=">>" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        camcap:orientation="vertical"
+        camcap:id="@id/layoutBottom"
+        camcap:layout_width="match_parent"
+        camcap:layout_height="wrap_content">
+
+        <TextView
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content"
+            camcap:text="@string/latest_snapshots" />
+
+        <LinearLayout
+            camcap:orientation="horizontal"
+            camcap:id="@id/layoutThumbs"
+            camcap:background="@color/cornsilk"
+            camcap:layout_width="match_parent"
+            camcap:layout_height="UNKNOWN_DATA_0x9601" />
+        /> />
+
+        <RelativeLayout
+            camcap:id="@id/progressLoadingImage"
+            camcap:background="#55000000"
+            camcap:visibility="invisible"
+            camcap:clickable="true"
+            camcap:layout_width="match_parent"
+            camcap:layout_height="match_parent">
+
+        <LinearLayout
+            camcap:orientation="horizontal"
+            camcap:background="0x10800b2"
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content"
+            camcap:layout_centerInParent="true"
+
+        <LinearLayout
+            camcap:paddingLeft="100dp"
+            camcap:paddingTop="20dp"
+            camcap:paddingRight="100dp"
+            camcap:paddingBottom="20dp"
+            camcap:layout_width="wrap_content"
+            camcap:layout_height="wrap_content">
+
+            <ProgressBar
+                camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content" />
+
+            <TextView
+                camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                camcap:layout_width="wrap_content"
+                camcap:layout_height="wrap_content"
+                camcap:text="@string/loading_image" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout></LinearLayout><LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/rightLayout"
+camcap:layout_width="wrap_content"
+camcap:layout_height="match_parent"
+camcap:layout_marginLeft="5dp"<LinearLayout
+camcap:id="@id/linearLayout1"
+camcap:background="@color/cornsilk"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content">
+<TextView
+    camcap:textSize="20dp"
+    camcap:textColor="#000"
+    camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    camcap:id="@id/textView5"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/program_mode" />
+
+<TextView
+    camcap:textSize="20dp"
+    camcap:textColor="#000"
+    camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    camcap:id="@id/textViewCameraMode"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content"
+    camcap:layout_marginLeft="10dp" />
+</LinearLayout><TableLayout
+camcap:id="@id/propertyTable"
+camcap:background="@color/cornsilk"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content"
+camcap:layout_alignParentTop="true"
+camcap:layout_centerInParent="true">
+<TableRow>
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerShutterValues"
+        camcap:header="@string/shutter_speed"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerApertureValues"
+        camcap:header="@string/aperture"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerIsoValues"
+        camcap:header="@string/iso"
+        style="@style/camera_property_box" />
+</TableRow>
+
+<TableRow>
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerEvValues"
+        camcap:header="@string/exposure_compensation"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerWhiteBalanceValues"
+        camcap:header="@string/white_balance"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerKelvinValues"
+        camcap:header="@string/kelvin"
+        style="@style/camera_property_box" />
+</TableRow>
+
+<TableRow>
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerMeteringModeValues"
+        camcap:header="@string/metering_mode"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerPictureStyleValues"
+        camcap:header="@string/picture_style"
+        style="@style/camera_property_box" />
+
+    <de.xeqo.camcapdemo.gui.CameraPropertyBox
+        camcap:id="@id/spinnerCompressionSetting"
+        camcap:header="@string/compression"
+        style="@style/camera_property_box" />
+</TableRow>
+</TableLayout><LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/timeLapse"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content"<LinearLayout
+camcap:orientation="horizontal"
+camcap:id="@id/timeLapseLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content">
+<TextView
+    camcap:textSize="20dp"
+    camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    camcap:layout_width="match_parent"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/time_lapse"
+    camcap:layout_weight="1.0" />
+
+<CheckBox
+    camcap:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    camcap:id="@id/checkBoxTimeLapse"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content" />
+</LinearLayout><LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/timeLapseContentLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="UNKNOWN_DATA_0x1">
+<TextView
+    camcap:layout_width="match_parent"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/bracketing_demo_hint" />
+
+<Button
+    camcap:id="@id/buttonShowOnMarket2"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/show_on_market" />
+</LinearLayout></LinearLayout><LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/autoBracket"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content"<LinearLayout
+camcap:orientation="horizontal"
+camcap:id="@id/autoBracketLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="wrap_content">
+<TextView
+    camcap:textSize="20dp"
+    camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    camcap:layout_width="match_parent"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/bracketing_mode"
+    camcap:layout_weight="1.0" />
+
+<CheckBox
+    camcap:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    camcap:id="@id/checkBoxBracketingMode"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content" />
+</LinearLayout><LinearLayout
+camcap:orientation="vertical"
+camcap:id="@id/autoBracketContentLayout"
+camcap:layout_width="match_parent"
+camcap:layout_height="UNKNOWN_DATA_0x1">
+<TextView
+    camcap:layout_width="match_parent"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/bracketing_demo_hint" />
+
+<Button
+    camcap:id="@id/buttonShowOnMarket"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content"
+    camcap:text="@string/show_on_market" />
+</LinearLayout></LinearLayout><FrameLayout
+camcap:layout_width="match_parent"
+camcap:layout_height="match_parent">
+<ToggleButton
+    camcap:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    camcap:id="@id/toggleButtonLiveView"
+    camcap:layout_width="wrap_content"
+    camcap:layout_height="wrap_content"
+    camcap:textOn="@string/live_view_on"
+    camcap:textOff="@string/live_view_off" />
+
+<Button
+    camcap:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    camcap:id="@id/buttonInitCapture"
+    camcap:background="@drawable/capture_selector"
+    camcap:layout_width="UNKNOWN_DATA_0x9601"
+    camcap:layout_height="UNKNOWN_DATA_0x9601"
+    camcap:text="@string/capture" />
+</FrameLayout></LinearLayout></LinearLayout></LinearLayout>

@@ -1,0 +1,14 @@
+.settings
+/bin/*
+/gen/*
+/.gradle/*
+/local.properties
+/build
+/captures
+.externalNativeBuild
+/.idea/*
+/TwsPluginKronaby.iml
+out/
+.gradle/*
+kronaby.iml
+gradle/

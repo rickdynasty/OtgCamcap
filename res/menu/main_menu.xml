@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/itemSelectCamera" android:title="@string/main_menu_select_camera" />
+    <item android:id="@id/itemSettings" android:title="@string/settings" />
+    <item android:id="@id/itemFeedback" android:title="@string/feedback" android:showAsAction="ifRoom" />
+    <item android:id="@id/itemFullscreen" android:title="@string/main_menu_fullscreen" android:checkable="true" />
+</menu>
